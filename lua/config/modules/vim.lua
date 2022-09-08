@@ -20,11 +20,6 @@ function M.setup()
 	-- encoding
 	vim.o.encoding = "utf-8"
 	vim.o.fileformat = "unix"
-
-	-- netrw
-	vim.g.netrw_banner = 0
-	vim.g.netrw_liststyle = 3
-	vim.g.netrw_browse_split = 3
 end
 
 return M
