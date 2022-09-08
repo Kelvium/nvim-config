@@ -40,6 +40,7 @@ function M.setup()
 		use("kylechui/nvim-surround")
 		use("justinmk/vim-sneak")
 
+		-- telescope
 		use({
 			"nvim-telescope/telescope.nvim",
 			requires = {
@@ -49,6 +50,8 @@ function M.setup()
 				},
 			},
 		})
+
+		use("nvim-telescope/telescope-file-browser.nvim")
 
 		-- git
 		use("TimUntersberger/neogit")

@@ -11,10 +11,14 @@ function M.setup()
 				override_file_sorter = true,
 				case_mode = "smart_case",
 			},
+			file_browser = {
+				hijack_netrw = true,
+			},
 		},
 	})
 
 	telescope.load_extension("fzf")
+	telescope.load_extension("file_browser")
 
 	local map = vim.api.nvim_set_keymap
 	local map_options = { noremap = true, silent = true }
