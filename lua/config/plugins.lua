@@ -71,6 +71,7 @@ function M.setup()
 
 		-- code style
 		use("gpanders/editorconfig.nvim")
+		use("RRethy/nvim-align")
 
 		-- misc
 		use("nvim-lua/plenary.nvim")
