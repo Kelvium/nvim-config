@@ -24,7 +24,7 @@ function M.setup()
 	local map_options = { noremap = true, silent = true }
 	map("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<CR>", map_options)
 	map("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<CR>", map_options)
-	map("n", "<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<CR>", map_options)
+	map("n", "<leader>fb", "<cmd>lua require('telescope').extensions.file_browser.file_browser()<CR>", map_options)
 	map("n", "<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<CR>", map_options)
 end
 
